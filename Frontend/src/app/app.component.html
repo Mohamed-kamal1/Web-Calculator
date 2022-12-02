@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <div class="container text-center" id="cont">
+      <div class="row" id="screen">
+        <div class="col" id=screen1>
+          <div class="row">
+            <h3>{{input}}</h3>
+          </div>
+          <div class="row">
+            <h3>{{input2}}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <button class=" col btn btn-danger btn-lg" (click)="press('%')">%</button>
+        <button class=" col btn btn-danger btn-lg" (click)="press('CE')">CE</button>
+        <button class=" col btn btn-danger btn-lg" (click)="press('C')">C</button>
+        <button class=" col btn btn-warning btn-lg" (click)="press('del')">⌫</button>
+      </div>
+      <div class="row">
+        <button class=" col btn btn-danger btn-lg" (click)="press('1/x')">&#8543;x</button>
+        <button class=" col btn btn-danger btn-lg" (click)="press('x^2')">x&#178;</button>
+        <button class=" col btn btn-danger btn-lg" (click)="press('x^0.5')">&#8730;x</button>
+        <button class=" col btn btn-warning btn-lg" (click)="press('÷')">÷</button>
+      </div>
+
+      <div class="row">
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('7')">7</button>
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('8')">8</button>
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('9')">9</button>
+        <button class=" col btn btn-warning btn-lg" (click)="press('x')">x</button>
+      </div>
+      <div class="row">
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('4')">4</button>
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('5')">5</button>
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('6')">6</button>
+        <button class=" col btn btn-warning btn-lg" (click)="press('-')">-</button>
+      </div>
+      <div class="row">
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('1')">1</button>
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('2')">2</button>
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('3')">3</button>
+        <button class=" col btn btn-warning btn-lg" (click)="press('+')">+</button>
+      </div>
+      <div class="row">
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('+/-')">⁺⁄₋</button>
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('0')">0</button>
+        <button class=" col btn btn-outline-success btn-lg" (click)="press('.')">.</button>
+        <button class=" col btn btn-success btn-lg" (click)="press('=')">=</button>
+      </div>
+
+    </div>
+
+
+  </body>
+
+</html>
